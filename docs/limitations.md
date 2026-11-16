@@ -40,8 +40,10 @@ the offline path.
 ## PyRIT Crescendo requires a live model
 
 `CrescendoAttack` needs an adversarial chat model and an editable-history
-target, so it is documented but not executed offline. See
-[`pyrit-integration.md`](pyrit-integration.md).
+target, so it is documented but not executed offline. The fail-safe example is
+not a completed Crescendo evaluation. See
+[`pyrit-integration.md`](pyrit-integration.md) and the register in
+[`outstanding-work.md`](outstanding-work.md).
 
 ## Not a scanner, not production hardening
 
@@ -53,3 +55,6 @@ demonstration of enforcement placement, not a production reference architecture.
 
 PyRIT is pinned to 1.2.0; its public API is evolving. A PyRIT upgrade must be
 re-verified against the adapter before the pin changes.
+
+Unfinished work and recommended follow-ups are listed in
+[`outstanding-work.md`](outstanding-work.md), not here.

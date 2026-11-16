@@ -56,3 +56,9 @@ The adapter in `integrations/pyrit_target.py` is tested against PyRIT 1.2.0.
 When upgrading PyRIT, re-verify `PromptTarget`'s interface
 (`_send_prompt_to_target_async`, `TargetConfiguration`, `TargetCapabilities`,
 `construct_response_from_request`) before bumping the pin.
+
+## Outstanding work
+
+Unfinished features are registered in `docs/outstanding-work.md`. Do not start
+an item there unless it was explicitly requested. Do not mark Crescendo or
+live-model evaluation complete because the fail-safe example exists.

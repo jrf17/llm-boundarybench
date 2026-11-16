@@ -229,6 +229,11 @@ The deterministic backend models *application* trust-boundary decisions, which
 is exactly what the framework measures — the enforcement in application code,
 not the nondeterminism of a hosted model. See [`docs/limitations.md`](docs/limitations.md).
 
+Unfinished features and recommended follow-ups, including the unexecuted live
+Crescendo run, are recorded in
+[`docs/outstanding-work.md`](docs/outstanding-work.md). They are not part of
+the published offline benchmark.
+
 ---
 
 ## Responsible use

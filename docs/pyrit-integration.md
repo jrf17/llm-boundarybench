@@ -111,3 +111,6 @@ guards this behavior.
   judgment on real targets.
 - The adapter is tested against PyRIT 1.2.0 specifically; PyRIT's API is moving
   and should be re-verified on upgrade (see `AGENTS.md`).
+
+The unfinished Crescendo run and the absent live-model evaluation are recorded
+in [`outstanding-work.md`](outstanding-work.md).
