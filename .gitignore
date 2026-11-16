@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Reports and runtime artifacts (generated, not sources)
+reports/*.json
+reports/*.md
+!reports/examples/*.json
+!reports/examples/*.md
+
+# Secrets / environment
+.env
+.env.*
+*.secret
+*.pem
+*.key
+!tests/fixtures/**/*.pem
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
