@@ -66,3 +66,17 @@ def test_unknown_mode_rejected() -> None:
 
     with pytest.raises(ValueError):
         select_policy("production")
+
+
+def test_crescendo_fails_safe_without_adversarial_model() -> None:
+    """Crescendo must not fabricate a run when no adversarial model is set."""
+    import os
+    import subprocess
+    import sys
+    from pathlib import Path
+
+    example = Path(__file__).resolve().parent.parent.parent / "examples" / "crescendo_demo.py"
+    env = {k: v for k, v in os.environ.items() if k != "BOUNDARYBENCH_ADVERSARIAL_TARGET"}
+    result = subprocess.run([sys.executable, str(example)], capture_output=True, text=True, env=env)
+    assert result.returncode == 2
+    assert "requires a configured live adversarial model" in result.stderr

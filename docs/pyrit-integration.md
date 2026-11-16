@@ -95,6 +95,12 @@ Because it requires a live model and an editable-history target, it cannot be
 executed in the credential-free offline environment and is documented rather
 than exercised. Configure it only against targets you are authorized to test.
 
+A fail-safe example is provided at `examples/crescendo_demo.py`: it wires the
+authentic `CrescendoAttack` API but exits with a clear message (exit code 2)
+when no adversarial model is configured, so it can never fabricate an offline
+run. `tests/security/test_pyrit.py::test_crescendo_fails_safe_without_adversarial_model`
+guards this behavior.
+
 ## Known limitations
 
 - The synthetic application does not expose editable conversation history, so it
